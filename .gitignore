@@ -6,3 +6,6 @@ bower_components
 typings
 build
 npm-debug.log
+
+/dist
+/tmp
