@@ -1,7 +1,7 @@
 {
   "name": "paretto",
   "version": "0.0.0",
-  "description": "Web application for collecting personal colour palletes",
+  "description": "Web application for collecting personal colour palettes",
   "private": true,
   "directories": {
     "doc": "doc",
