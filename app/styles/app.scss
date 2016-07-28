@@ -1,8 +1,24 @@
 @import "normalize";
+@import "variables";
 
 body {
-  background-color: lightblue;
-  header {
-    background-color: white;
-  }
+  background-color: $light-color;
+  font-family: $sans-font;
+  font-size: $font-size;
+  font-weight: $font-weight;
 }
+
+.p-container {
+  width: $container-width;
+  margin: 0 auto;
+}
+
+a {
+  color: $contrast-color;
+  text-decoration: none;
+  outline: none;
+  border: 0
+}
+
+@import "components/p-header";
+@import "./login";
