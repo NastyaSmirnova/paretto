@@ -1,0 +1,25 @@
+.paretto__header {
+  background-color: $dark-color;
+  color: $light-color;
+  overflow: auto;
+  padding: 1rem 0;
+
+  .header__logo {
+    display: inline-block;
+    vertical-align: top;
+    a {
+      color: $light-color;
+      font-size: 2em;
+      span {
+        color: $contrast-color;
+      }
+    }
+  }
+
+  .header__usermenu {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    line-height: 100%;
+  }
+}
