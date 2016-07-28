@@ -7,6 +7,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('palette', { path: ':palette_id' });
+  this.route('login');
 });
 
 export default Router;
