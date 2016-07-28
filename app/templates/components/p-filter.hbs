@@ -1,0 +1,6 @@
+{{#each filters as |filter|}}
+  <button {{action filterAction filter.value}}>
+    {{filter.label}}
+  </button>
+{{/each}}
+{{yield}}
