@@ -7,11 +7,17 @@
   .header__logo {
     display: inline-block;
     vertical-align: top;
+    text-align: center;;
     a {
       color: $light-color;
       font-size: 2em;
+      line-height: 1;
       span {
         color: $contrast-color;
+      }
+      small {
+        font-size: .5em;
+        display: block;
       }
     }
   }
