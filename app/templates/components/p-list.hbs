@@ -1,6 +1,10 @@
 <ul>
   {{#each palettes as |palette|}}
-    <li>{{palette.id}}</li>
+    {{#link-to "palette" palette.id}}
+      <li>
+        {{p-palette colours=palette.colours id=palette.id}}
+      </li>
+    {{/link-to}}
   {{else}}
     No palette has been created
   {{/each}}
