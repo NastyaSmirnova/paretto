@@ -1,4 +1,16 @@
 .paretto-subheader {
+  .paretto__search {
+    width: 600px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e5e5e5;
+    input {
+      width: 100%;
+      display: inline-block;
+      padding: 1.5rem 0;
+      font-size: 1.2rem;
+      color: $dark-color;
+    }
+  }
   .paretto__filters {
     background-color: #fdfdfd;
     border-bottom: 1px solid #e5e5e5;
@@ -18,7 +30,7 @@
       }
     }
     .filters-divider {
-      color: $contrast-color;
+      color: #e5e5e5;
       margin: 0 1rem;
       &:last-child {
         display: none;

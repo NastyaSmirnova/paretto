@@ -2,7 +2,7 @@
 @import "variables";
 
 body {
-  background-color: $light-color;
+  background-color: $bgr-grey;
   font-family: $sans-font;
   font-size: $font-size;
   font-weight: $font-weight;
@@ -16,18 +16,34 @@ body {
 a {
   color: $contrast-color;
   text-decoration: none;
-  outline: none;
-  border: 0;
-  cursor: pointer;
+  @include noOutline;
 }
 
 button {
   background-color: transparent;
-  border: 0;
-  outline: none;
-  cursor: pointer;
   color: inherit;
+  @include noOutline;
 }
+
+input {
+  background-color: transparent;
+  @include noOutline;
+}
+
+// ::-webkit-input-placeholder { color: $contrast-color; }
+// ::-moz-placeholder          { color: $contrast-color; }
+// :-moz-placeholder           { color: $contrast-color; }
+// :-ms-input-placeholder      { color: $contrast-color; }
+
+input[placeholder]          { text-overflow:ellipsis; }
+input::-moz-placeholder     { text-overflow:ellipsis; }
+input:-moz-placeholder      { text-overflow:ellipsis; }
+input:-ms-input-placeholder { text-overflow:ellipsis; }
+
+:focus::-webkit-input-placeholder { color: transparent }
+:focus::-moz-placeholder          { color: transparent }
+:focus:-moz-placeholder           { color: transparent }
+:focus:-ms-input-placeholder      { color: transparent }
 
 @import "components/p-header";
 @import "components/p-subheader";
