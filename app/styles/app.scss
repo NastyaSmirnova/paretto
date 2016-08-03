@@ -17,8 +17,18 @@ a {
   color: $contrast-color;
   text-decoration: none;
   outline: none;
-  border: 0
+  border: 0;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  color: inherit;
 }
 
 @import "components/p-header";
+@import "components/p-subheader";
 @import "./login";

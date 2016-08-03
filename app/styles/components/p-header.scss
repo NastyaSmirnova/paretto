@@ -7,7 +7,7 @@
   .header__logo {
     display: inline-block;
     vertical-align: top;
-    text-align: center;;
+    text-align: right;
     a {
       color: $light-color;
       font-size: 2em;
@@ -16,8 +16,9 @@
         color: $contrast-color;
       }
       small {
-        font-size: .5em;
+        font-size: .4em;
         display: block;
+        margin-right: 16px;
       }
     }
   }

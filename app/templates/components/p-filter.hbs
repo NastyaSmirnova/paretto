@@ -1,6 +1,9 @@
-{{#each filters as |filter|}}
-  <button {{action filterAction filter.value}}>
-    {{filter.label}}
-  </button>
-{{/each}}
+<div class="paretto__filters">
+  {{#each filters as |filter|}}
+    <button {{action filterAction filter.value}} class="filters-button">
+      {{filter.label}}
+    </button>
+    <span class="filters-divider">/</span>
+  {{/each}}
+</div>
 {{yield}}

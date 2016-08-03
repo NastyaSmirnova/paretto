@@ -1,5 +1,5 @@
-<div>
-  {{p-subheader filterList=filters filterChanger=changeFilter}}
+{{p-subheader filterList=filters filterChanger=changeFilter}}
+<div class="p-container">
   {{p-list palettes=model}}
+  {{outlet}}
 </div>
-{{outlet}}

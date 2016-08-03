@@ -8,7 +8,7 @@ export default Ember.Controller.extend({
       value: 'date'
     },
     {
-      label: 'Favourites',
+      label: 'Favourite',
       value: 'pined'
     }
   ],

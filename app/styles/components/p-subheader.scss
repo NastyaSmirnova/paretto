@@ -1,0 +1,25 @@
+.paretto-subheader {
+  .paretto__filters {
+    background-color: #fdfdfd;
+    border-bottom: 1px solid #e5e5e5;
+    height: 50px;
+    line-height: 48px;
+    text-align: center;
+    color: #999;
+    font-weight: normal;
+    .filters-button {
+      padding: 0;
+      &.filters-button--active {
+        color: black;
+        font-weight: bold;
+      }
+    }
+    .filters-divider {
+      color: #ddd;
+      margin: 0 1rem;
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+}
