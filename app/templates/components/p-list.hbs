@@ -1,13 +1,13 @@
 <ul class="paretto__list">
   {{#link-to 'palette' 0}}
-    <li class="paretto__list-item">
-      <span>+</span>
+    <li class="paretto__list-item paretto__list-item--create">
+      <span>Create new palette</span>
     </li>
   {{/link-to}}
   {{#each palettes as |palette|}}
     {{#link-to "palette" palette.id}}
       <li class="paretto__list-item">
-        {{p-palette colours=palette.colours id=palette.id}}
+        {{p-palette colours=palette.colours}}
       </li>
     {{/link-to}}
   {{else}}

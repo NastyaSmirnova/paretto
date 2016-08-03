@@ -13,6 +13,10 @@ export default Ember.Route.extend({
           {
             id: 2,
             colour: '#abc'
+          },
+          {
+            id: 2,
+            colour: '#efee12'
           }
         ]
        },

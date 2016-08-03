@@ -1,7 +1,4 @@
 <div class="paretto__palette">
-  {{id}}
-  {{#each colours as |c|}}
-    {{c.colour}}
-  {{/each}}
+  {{#each colours as |c|}}<span class="paretto__palette-color" style="background-color: {{c.colour}}"></span>{{/each}}
 </div>
 {{yield}}
