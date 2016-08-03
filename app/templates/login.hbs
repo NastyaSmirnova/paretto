@@ -4,18 +4,18 @@
   </div>
   <div class="loginform__warnings">
     {{#if loginFailed}}
-      <div class="alert">Invalid username or password.</div>
-    {{/if}}
-
-
-    {{#if isSlowConnection}}
-      <div class="alert alert-info">The request seems to be taking more time than usual, please wait.</div>
+      <div class="alert">Invalid email or password.</div>
     {{/if}}
   </div>
   <div class="loginform__inputs">
     <div class="loginform__field">
-      <label for="username">Username</label>
-      {{input value=username type="text" id="username"}}
+      <label for="email">Email</label>
+      {{input
+        value=emailAddress
+        type="email"
+        id="email"
+        autofocus="autofocus"
+        placeholder="Please type your e-mail address."}}
     </div>
     <div class="loginform__field">
       <label for="password">Password</label>
@@ -23,9 +23,10 @@
     </div>
   </div>
   <div class="loginform__actions">
-    <button type="submit" class="btn" {{bindAttr disabled="isProcessing"}}>
+    <button type="submit" disabled={{isDisabled}}>
       Log in!
     </button>
   </div>
+  {{fullName}}
 </form>
 {{!-- {{outlet}} --}}
