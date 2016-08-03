@@ -1,0 +1,18 @@
+.paretto__list {
+  padding: 1.5rem 0;
+  a {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    .paretto__list-item {
+      list-style-type: none;
+      border: 1px solid #e5e5e5;
+      background-color: white;
+      border-radius: .5rem;
+      box-sizing: border-box;
+      padding: 1.5rem;
+    }
+  }
+}

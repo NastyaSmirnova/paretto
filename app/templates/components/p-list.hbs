@@ -1,7 +1,12 @@
-<ul>
+<ul class="paretto__list">
+  {{#link-to 'palette' 0}}
+    <li class="paretto__list-item">
+      <span>+</span>
+    </li>
+  {{/link-to}}
   {{#each palettes as |palette|}}
     {{#link-to "palette" palette.id}}
-      <li>
+      <li class="paretto__list-item">
         {{p-palette colours=palette.colours id=palette.id}}
       </li>
     {{/link-to}}
@@ -9,4 +14,3 @@
     No palette has been created
   {{/each}}
 </ul>
-{{#link-to "index"}}Some link{{/link-to}}
